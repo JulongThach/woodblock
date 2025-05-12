@@ -1,346 +1,1454 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="website" property="og:type" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#51392bc7" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/mstile-144x144.png"
+    />
+    <meta name="theme-color" content="#51392bc7" />
 
+    <!-- Page title -->
     <title>Woodblock Printing & Advertising</title>
+
+    <!-- Canonical -->
+
     <!-- Favicon -->
-    <link href="assets/images/logo/woodblock.png" rel="icon">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="icon"
+      href="./assets/woodblock logo.png"
+    />
+    <!-- CSS Plugins -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-<!--
-
-TemplateMo 565 Onix Digital
-
-https://templatemo.com/tm-565-onix-digital
-
--->
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-
-<body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+  <body>
+    <!-- Page loading -->
+    <div
+      class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      aria-label="Loading..."
+    >
+      <div class="grid-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png">
+    <!-- Navbar -->
+    <header
+      class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent"
+      role="banner"
+      aria-label="Navigation bar"
+    >
+      <div class="container">
+        <div
+          class="ic-navbar-container relative -mx-5 flex items-center justify-between"
+        >
+          <div class="w-60 lg:w-56 max-w-full px-5">
+            <a
+              href="."
+              class="ic-navbar-logo block w-full py-5 text-primary-color"
+            >
+            <img src="assets/woodblock logo.png" />
             </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="about.html">About</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><div class="main-red-button-hover"><a href="https://t.me/WB_Printing_advertising" style="background-color: #51392b;">Contact Us</a></div></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+          </div>
+          <div class="flex w-full items-center justify-between px-5">
+            <div>
+              <button
+                type="button"
+                class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
+                data-web-toggle="navbar-collapse"
+                data-web-target="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation menu"
+              >
+                <i class="lni lni-menu"></i>
+              </button>
+
+              <nav
+                id="navbarMenu"
+                class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6"
+              >
+                <ul
+                  class="block lg:flex"
+                  role="menu"
+                  aria-label="Navigation menu"
+                >
+                  <li class="group relative">
+                    <a
+                      href="#home"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-[#fff] dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
+                      role="menuitem"
+                      >Home</a
+                    >
+                  </li>
+                   <li class="group relative">
+                    <a
+                      href="#about"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#services"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Services</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#intro"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Mockup & Design</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#content"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Content</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#team"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Team</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#contact"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+              <button
+                type="button"
+                class="inline-flex items-center text-primary-color text-[24px]/none"
+                aria-label="Switch theme"
+                data-web-trigger="web-theme"
+              ></button>
+              
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <!-- Banner TOP -->
-  <div class="main-banner" id="top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+    </header>
+
+    <main class="main relative">
+      <!-- Hero section -->
+      <section
+        id="home"
+        class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]"
+      >
+        <div class="container">
+          <div class="-mx-5 flex flex-wrap items-center">
+            <div class="w-full px-5">
+              <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+                <h1
+                  class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight"
+                >
+                  Woodblock Printing & Advertising Co.,LTD
+                </h1>
+
+                <p
+                  class="mx-auto mb-9 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal"
+                >
+                  You imagine, We make it happen
+                </p>
+
+                <ul
+                  class="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5"
+                >
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="inline-flex items-center justify-center rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]"
+                      role="button"
+                      >Get Started</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="javascript:boid(0)"
+                      class="video-popup flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]"
+                      role="button"
+                      ><i class="lni lni-play text-lg/none"></i> Watch Intro</a
+                    >
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="section-area">
+        <div class="container">
+          <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+            <div class="w-full">
+              <figure class="scroll-revealed max-w-[480px] mx-auto">
+                <img
+                  src="./assets/img/about/about.jpg"
+                  alt="About image"
+                  class="rounded-xl"
+                />
+              </figure>
+            </div>
+
+            <div class="w-full">
+              <div class="scroll-revealed">
+                <h6 class="mb-2 block text-lg font-semibold" style="color:#6e2c00;">
+                  About Us
+                </h6>
+                <h2 class="mb-6">
+                  Get to know more about Woodblock Printing & Advertising
+                </h2>
+              </div>
+
+              <div class="tabs scroll-revealed">
+                <nav
+                  class="tabs-nav flex flex-wrap gap-4 my-8"
+                  role="tablist"
+                  aria-label="About us tabs"
+                >
+                  <button
+                    type="button"
+                    class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium"
+                    data-web-toggle="tabs"
+                    data-web-target="tabs-panel-profile"
+                    id="tabs-list-profile"
+                    role="tab"
+                    aria-controls="tabs-panel-profile"
+                  >
+                    Our Profile
+                  </button>
+
+                  <button
+                    type="button"
+                    class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium"
+                    data-web-toggle="tabs"
+                    data-web-target="tabs-panel-vision"
+                    id="tabs-list-vision"
+                    role="tab"
+                    aria-controls="tabs-panel-vision"
+                  >
+                    Our Vision
+                  </button>
+
+                  <button
+                    type="button"
+                    class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium"
+                    data-web-toggle="tabs"
+                    data-web-target="tabs-panel-history"
+                    id="tabs-list-history"
+                    role="tab"
+                    aria-controls="tabs-panel-history"
+                  >
+                    Our Mission
+                  </button>
+                </nav>
+
+                <div
+                  class="tabs-content mt-4"
+                  id="tabs-panel-profile"
+                  tabindex="-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-list-profile"
+                >
+                  <p>
+                    Woodblock Printing & Advertising is a one-stop service company for your 
+                    events. We provide goods and services ranging from printing supplies, and 
+                    merchandise, to stage equipment and technical personnel. We have experience in the 
+                    printing industry for 8 years growing from a graphic design agency to a printing 
+                    supplier, so we have a strong foundation in creativity and quality design before 
+                    handling any production.
+                  </p>
+                  <p>
+                    We have worked with many partners including Peng Houth Group, PNN, Beyond 
+                    the Games, Canadia, Dinosaurs Alive, and many more corporations and organizations.  
+                  </p>
+                </div>
+
+                <div
+                  class="tabs-content mt-4"
+                  id="tabs-panel-vision"
+                  tabindex="-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-list-vision"
+                >
+                  <p>
+                    We are building our company to be the leader of this industry in 
+                    Cambodia, we are investing in more technology and production facilities to 
+                    ensure that we have the leading printing quality.
+                  </p>
+                </div>
+
+                <div
+                  class="tabs-content mt-4"
+                  id="tabs-panel-history"
+                  tabindex="-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-list-history"
+                >
+                  <p>
+                    We seek to become our customer's first choice and the most trusted print 
+                    partner. We focus on the quality of every production; we develop strong relationships 
+                    and reliable supply chains from local vendors and international factories.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services section 
+      <section  class="section-area">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="owl-carousel owl-banner">
-                <div class="item header-text">
-                  <h6>Welcome to Woodblock</h6>
-                  <h2 style="color:#51392b;">Making <em style="color:#E55437;">Your Events </em> Unforgettable</h2>
-                  <p>Turn your event into an unforgettable experience with unforgettable moments and memories that last a lifetime.</p>
-                  <div class="down-buttons">
-                    <div class="main-blue-button-hover">
-                      <a href="https://t.me/WB_Printing_advertising" target="_blank">Message Us Now</a>
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-layout-wtf" viewBox="0 0 16 16">
+                    <path d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                  </svg>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Network
+                  </h4>
+                  <p>
+                    At Woodblock Printing & Advertising Co., Ltd., our extensive network drives innovation and growth. Through strategic partnerships, we create value for our clients. Join us to unlock new possibilities for success.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary"
+                >
+                  <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8253 6.45518C11.8222 6.45304 11.8191 6.45092 11.816 6.44882L11.0226 5.91552C9.90385 5.16349 8.42087 5.25001 7.39716 6.12703L5.44921 7.79585C5.3133 7.91229 5.14023 7.97629 4.96126 7.97629H2.75C2.33579 7.97629 2 8.31207 2 8.72629V14.7558C2 15.17 2.33579 15.5058 2.75 15.5058H4.83766C5.05324 15.5058 5.2584 15.5986 5.40079 15.7604L7.74003 18.4197C8.49372 19.2765 9.76945 19.4335 10.7083 18.7849L11.3925 18.3122L12.1263 18.5611C13.0569 18.8769 14.0847 18.5522 14.665 17.7591L15.135 17.1168L15.4611 17.1608C16.3853 17.2854 17.2905 16.827 17.7371 16.0084L17.7859 15.9188H21.25C21.6642 15.9188 22 15.583 22 15.1688V8.72629C22 8.31207 21.6642 7.97629 21.25 7.97629H19.0388C18.8587 7.97629 18.6846 7.91148 18.5483 7.79371L16.8614 6.3357C15.3979 5.07079 13.2183 5.12952 11.8253 6.45518ZM10.1858 7.16041C9.62641 6.78439 8.88492 6.82765 8.37306 7.26616L6.42512 8.93498C6.01738 9.28429 5.49817 9.47629 4.96126 9.47629H3.5V14.0058H4.83766C5.48441 14.0058 6.09989 14.2841 6.52706 14.7697L8.8663 17.429C9.11753 17.7146 9.54277 17.7669 9.85573 17.5507L10.8502 16.8637C11.0453 16.7289 11.2928 16.6943 11.5174 16.7706L12.6083 17.1407C12.9185 17.2459 13.2611 17.1377 13.4545 16.8733L14.1879 15.8711C14.3502 15.6492 14.6209 15.534 14.8934 15.5707L15.6616 15.6743C15.9696 15.7158 16.2714 15.563 16.4202 15.2901L16.675 14.823C16.6795 14.8144 16.6841 14.8059 16.6889 14.7975L16.7135 14.7524C16.8754 14.4556 16.8186 14.0871 16.5749 13.8527L13.918 11.2977L11.839 12.9305C10.9599 13.621 9.70712 13.5613 8.8976 12.7904L8.82951 12.7255C7.91585 11.8554 7.89611 10.4043 8.78576 9.50962L10.7469 7.53756L10.1858 7.16041ZM18.305 14.4188H20.5V9.47629H19.0388C18.4985 9.47629 17.9762 9.28187 17.5675 8.92857L15.8805 7.47056C14.9865 6.69784 13.6471 6.74839 12.8138 7.58629L9.84938 10.5673C9.55282 10.8655 9.5594 11.3493 9.86396 11.6393L9.93205 11.7041C10.2019 11.9611 10.6195 11.981 10.9125 11.7508L13.4755 9.73786C13.4946 9.72126 13.5144 9.70578 13.5347 9.69143L14.041 9.29373C14.3668 9.03789 14.8383 9.09456 15.0941 9.42031C15.3122 9.69806 15.3032 10.0818 15.0939 10.3474L17.6146 12.7715C18.0737 13.2129 18.3116 13.813 18.305 14.4188Z" fill="#ffffff"/>
+                  </svg>
+
+
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Partnertship
+                  </h4>
+                  <p>
+                    In today’s dynamic business landscape, collaboration is key. At Woodblock Printing & Advertising Co., Ltd., we harness the power of partnership to drive innovation and growth. Join us in achieving remarkable outcomes. Let's create success together.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.5 4.5 0 0 1 7.965 13a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242s1.46-.118 2.152-.242a27 27 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434m6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434"/>
+                  </svg>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Quality
+                  </h4>
+                  <p>
+                    At Woodblock Printing & Advertising Co., Ltd., quality is our cornerstone. We excel in every aspect, delivering unmatched value and exceeding expectations. With our commitment to high standards and continuous improvement, join us in achieving greatness through quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- Our Service -->
+      <section id="services" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary" style="color:#6e2c00;">
+              Our Best Services 
+            </h6>
+            <h2 class="mb-6">Equipment, Good & Services</h2>
+            <p>
+              Making Your Event Unforgettable
+            </p>
+          </div>
+          <div class="scroll-revealed portfolio-grid row">
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="branding">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/service/1.png"
+                    alt="Graphics Design"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/service/1.png"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
                     </div>
-                    <div class="call-button">
-                      <a><i class="fa fa-phone"></i> (855) 98 222 901</a>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >CORPORATE GIFT & BRANDING</a
+                    >
+                  </h4>
+                  <p>
+                    Introducing our cutting edge technology, Woodblock can elevate your brand activations to the next level. With our machines, we are able to cut to almost any shape that our clients desire
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="research">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/service/2.png"
+                    alt="Web Development"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/service/2.png"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >PACKAGING DESIGNS</a
+                    >
+                  </h4>
+                  <p>
+                    Here at Woodblock, We have the capability to supply our clients with many varieties of products, from textile apparel such as (T-shirts, Scarfs, and tote bags), office supplies (pens, envelopes, notebooks) to event merchandises (pins, tumblers, keychains).
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="marketing">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/service/3.png"
+                    alt="App Development"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/service/3.png"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >PRINTING SERVICES</a
+                    >
+                  </h4>
+                  <p>
+                    With our up-to-date printers, Woodblock ensures our customer with the highest quality of print with reasonable price. Your event banners, leaflet and point of sale materials will surely stand out in the crowd.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="planning">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/service/4.png"
+                    alt="Digital Marketing"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/service/4.png"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-[1.5rem] leading-tight text-inherit"
+                      >BRAND ACTIVATIONS</a
+                    >
+                  </h4>
+                  <p>
+                    Meet our talented creative team, comprising of Experienced Graphic Designers, Skilled Architectures and talented artist, we are able to produce designs and artworks that stands out from the rest of your competitors.
+
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="branding">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/service/5.png"
+                    alt="SEO Services"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/service/5.png"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">STAGE EQUIPEMENT</a>
+                  </h4>
+                  <p>
+                    Woodblock also supplies our clients who are planning to host an event no matter the sizes with equipment such as Truss, Lightings, LED, PA Sound system as well as Tentage Chairs and Tables.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="portfolio col-12 sm:col-6 lg:col-4">
+              <article class="group" data-filter="marketing">
+                <div
+                  class="relative overflow-hidden w-full aspect-[4/3] rounded-xl"
+                >
+                  <img
+                    src="./assets/img/service/6.png"
+                    alt="Product Design"
+                    class="w-full h-full object-cover"
+                  />
+                  <div
+                    class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible"
+                  >
+                    <div class="flex flex-wrap gap-2 p-4">
+                      <div class="inline-block relative">
+                        <a
+                          href="./assets/img/service/6.png"
+                          class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-zoom-in"></i>
+                        </a>
+                      </div>
+                      <div class="portfolio-icon">
+                        <a
+                          href="javascript:void(0)"
+                          class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color"
+                        >
+                          <i class="lni lni-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-4">
+                  <h4 class="mb-2">
+                    <a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">STAGE SETUP</a>
+                  </h4>
+                  <p>
+                    With our experiences and skills from our last projects, our team is equipped with the ability to set up stage, event venue and even decorations. Bringing you an event you will always remember.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section id="intro" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary" style="color:#6e2c00;">
+              Mockup
+            </h6>
+            <h2 class="mb-6">Our Mockup & Designs</h2>
+            <p>
+              This mockup reflects a clean, user-focused design that combines visual clarity with intuitive functionality.
+            </p>
+          </div>
+
+          <div class="swiper testimonial-carousel common-carousel scroll-revealed">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/1.png" />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/2.png" />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/3.png" />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/4.png" />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/5.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/6.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/7.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/8.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 shadow-card-2">
+                    <img src="./assets/img/mockup/9.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-[60px] flex items-center justify-center gap-1">
+              <div class="swiper-button-prev">
+                <i class="lni lni-arrow-left"></i>
+              </div>
+              <div class="swiper-button-next">
+                <i class="lni lni-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team section -->
+      <section id="team" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary">Team</h6>
+            <h2 class="mb-6">Our Creative Team</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered alteration in some form.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+              <figure
+                class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1"
+              >
+                <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                  <img
+                    src="./assets/img/avatar/avatar-1.jpg"
+                    alt="Team picture"
+                    class="h-full w-full rounded-full object-cover"
+                  />
+                  <span
+                    class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-red-500 opacity-0 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute top-0 right-0 -z-10 h-10 w-10 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100"
+                  ></span>
+                </div>
+                <figcaption class="text-center block">
+                  <h4
+                    class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12"
+                  >
+                    Garret Edwards
+                  </h4>
+                  <p
+                    class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11"
+                  >
+                    Art Director
+                  </p>
+                  <div class="flex items-center justify-center gap-5">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-facebook-fill"></i>
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-twitter-original"></i>
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-instagram-original"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+              <figure
+                class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1"
+              >
+                <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                  <img
+                    src="./assets/img/avatar/avatar-2.jpg"
+                    alt="Team picture"
+                    class="h-full w-full rounded-full object-cover"
+                  />
+                  <span
+                    class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-red-500 opacity-0 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute top-0 right-0 -z-10 h-10 w-10 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100"
+                  ></span>
+                </div>
+                <figcaption class="text-center block">
+                  <h4
+                    class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12"
+                  >
+                    Jonathan Leeson
+                  </h4>
+                  <p
+                    class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11"
+                  >
+                    Web Developer
+                  </p>
+                  <div class="flex items-center justify-center gap-5">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-facebook-fill"></i>
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-twitter-original"></i>
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-instagram-original"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
+              <figure
+                class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1"
+              >
+                <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
+                  <img
+                    src="./assets/img/avatar/avatar-3.jpg"
+                    alt="Team picture"
+                    class="h-full w-full rounded-full object-cover"
+                  />
+                  <span
+                    class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-red-500 opacity-0 group-hover:opacity-100"
+                  ></span>
+                  <span
+                    class="absolute top-0 right-0 -z-10 h-10 w-10 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100"
+                  ></span>
+                </div>
+                <figcaption class="text-center block">
+                  <h4
+                    class="mb-1 text-lg font-semibold text-body-light-12 dark:text-body-dark-12"
+                  >
+                    Joe Russell
+                  </h4>
+                  <p
+                    class="mb-5 text-sm text-body-light-11 dark:text-body-dark-11"
+                  >
+                    UX Designer
+                  </p>
+                  <div class="flex items-center justify-center gap-5">
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-facebook-fill"></i>
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-twitter-original"></i>
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="text-body-light-10 dark:text-body-dark-10 hover:text-primary"
+                    >
+                      <i class="lni lni-instagram-original"></i>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Blog section -->
+      <section id="content" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary" style="color:#6e2c00;">Content</h6>
+            <h2 class="mb-6">Recent Projects</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered alteration in some form.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <article class="group">
+                <div class="relative">
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full aspect-[3/2] rounded-xl overflow-hidden block"
+                  >
+                    <img
+                      src="./assets/img/events/10.png"
+                      alt="Thumbnail"
+                      class="w-full h-full object-cover group-hover:scale-[1.05] group-hover:rotate-[2deg]"
+                    />
+                  </a>
+                </div>
+                <span
+                  class="block mt-6 w-full text-sm text-body-light-10 dark:text-body-dark-10"
+                  >19 Jan 2024</span
+                >
+                <h4 class="mb-6 mt-3 font-semibold text-[1.5rem]">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-body-light-12 dark:text-body-dark-12"
+                    >Ganzberg Boxing Event</a
+                  >
+                </h4>
+              </article>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <article class="group">
+                <div class="relative">
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full aspect-[3/2] rounded-xl overflow-hidden block"
+                  >
+                    <img
+                      src="./assets/img/events/12.png"
+                      alt="Thumbnail"
+                      class="w-full h-full object-cover group-hover:scale-[1.05] group-hover:rotate-[2deg]"
+                    />
+                  </a>
+                </div>
+                <span
+                  class="block mt-6 w-full text-sm text-body-light-10 dark:text-body-dark-10"
+                  >18 Dec 2023</span
+                >
+                <h4 class="mb-6 mt-3 font-semibold text-[1.5rem]">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-body-light-12 dark:text-body-dark-12"
+                    >Sea Fastival at Kep</a
+                  >
+                </h4>
+              </article>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <article class="group">
+                <div class="relative">
+                  <a
+                    href="javascript:void(0)"
+                    class="w-full aspect-[3/2] rounded-xl overflow-hidden block"
+                  >
+                    <img
+                      src="./assets/img/events/11.png"
+                      alt="Thumbnail"
+                      class="w-full h-full object-cover group-hover:scale-[1.05] group-hover:rotate-[2deg]"
+                    />
+                  </a>
+                </div>
+                <span
+                  class="block mt-6 w-full text-sm text-body-light-10 dark:text-body-dark-10"
+                  >28 Nov 2023</span
+                >
+                <h4 class="mb-6 mt-3 font-semibold text-[1.5rem]">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-body-light-12 dark:text-body-dark-12"
+                    >Sting Musicverse</a
+                  >
+                </h4>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients section -->
+      <section id="clients" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary" style="color:#6e2c00;">
+              Clients
+            </h6>
+            <h2 class="mb-6">Our Awesome Clients</h2>
+            <p>
+              "Proud to have collaborated with these amazing clients."
+            </p>
+          </div>
+
+          <div class="">
+            <div class="row">
+              <div
+                class="scroll-revealed text-center p-4 col-12"
+              >
+                <img
+                  src="./assets/img/client/1.png"
+                  alt="Brand Logo Image"
+                  class="w-full inline-block"
+                />
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 xl:col-4">
+              <div class="row">
+                <div class="col-12 md:col-6 xl:col-12">
+                  <div
+                    class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg"
+                  >
+                    <div>
+                      <i
+                        class="lni lni-phone w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4 class="text-[1.25rem] text-primary mb-3" style="color:#6e2c00;">Contact</h4>
+                      <p class="m-0">+855 98 222 901</p>
+                      <p class="m-0">woodblockprinting99@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 md:col-6 xl:col-12">
+                  <div
+                    class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg"
+                  >
+                    <div>
+                      <i
+                        class="lni lni-map-marker w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"
+                      ></i>
+                    </div>
+                    <div>
+                      <h4 class="text-[1.25rem] text-primary mb-3" style="color:#6e2c00;">Address</h4>
+                      <p class="m-0">Time Square 3, ជាន់ទី29 ផ្លូវ 317 កែងផ្លូវ335</p>
+                      <p class="m-0">ភូមិ7 សង្កាត់បឹងកក់ទី1 ខណ្ឌទួលគោក ភ្នំពេញ</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Banner TOP -->
-  <!-- Standard -->
-  <div id="pricing" class="pricing-tables">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2 style="color:#51392b;">OUR <em style="color:#E55437;">CORNERSTONE</em></h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="item first-item">
-            <h4 style="color:#E55437;">NETWORKING</h4>
-            <br>
-            <p style="color:#51392b;">At Woodblock Printing & Advertising Co., Ltd., our extensive network drives innovation and growth. Through strategic partnerships, we create value for our clients. Join us to unlock new possibilities for success.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="item second-item">
-            <h4 style="color:#E55437;">PARTNERSHIP</h4>
-            <br>
-            <p style="color:#51392b;">In today’s dynamic business landscape, collaboration is key. At Woodblock Printing & Advertising Co., Ltd., we harness the power of partnership to drive innovation and growth. Join us in achieving remarkable outcomes. Let's create success together.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="item third-item">
-            <h4 style="color:#E55437;">QUALITY</h4>
-            <br>
-            <p style="color:#51392b;">At Woodblock Printing & Advertising Co., Ltd., quality is our cornerstone. We excel in every aspect, delivering unmatched value and exceeding expectations. With our commitment to high standards and continuous improvement, join us in achieving greatness through quality.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Standard -->
-  <!-- Service -->
-  <div id="services" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2 style="color:#51392b;">OUR <em style="color:#E55437;">SERVICES</em></h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-portfolio">
-            <div class="item">
-              <div class="thumb">
-                <a href="pages/supply.html" target="_parent"><h4 style="color:#51392b; font-weight:700;">SUPPLYING</h4>
-                  <img src="assets/images/service/1.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <a href="pages/printing.html" target="_parent"><h4 style="color:#51392b; font-weight:700;">PRINTING</h4>
-                  <img src="assets/images/service/2.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <a href="pages/brand.html" target="_parent"><h4 style="color:#51392b; font-weight:700;">BRAND ACTIVATION</h4>
-                  <img src="assets/images/service/3.png" alt="">
-                </a>            
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <a href="pages/art.html" target="_parent"><h4 style="color:#51392b; font-weight:700;">ART & DESIGN</h4>
-                  <img src="assets/images/service/4.png" alt="">
-                </a>                   
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <div class="thumb">
-                  <a href="pages/equipment.html" target="_parent"><h4 style="color:#51392b; font-weight:700;">STAGE EQUIPMENTS</h4>
-                    <img src="assets/images/service/5.png" alt="">
-                  </a>                   
+
+            <div class="col-12 xl:col-8">
+              <div
+                class="scroll-revealed bg-body-light-1 dark:bg-primary-dark-2 rounded-xl py-8 sm:py-12 px-6 sm:px-10 z-10 relative shadow-card-1 hover:shadow-lg"
+              >
+                <div class="text-center max-w-[550px] mx-auto mb-12">
+                  <h6 class="mb-2 block text-lg font-semibold text-primary" style="color:#6e2c00;">
+                    Get in Touch
+                  </h6>
+                  <h2 class="mb-3">Ready to Get Started</h2>
+                  <p>
+                    Leave a message
+                  </p>
                 </div>
+
+                <form action="#" method="POST" class="flex flex-col gap-6">
+                  <div class="row">
+                    <div class="col-12 md:col-6">
+                      <input
+                        type="text"
+                        name="name"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12 md:col-6">
+                      <input
+                        type="email"
+                        name="email"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        placeholder="Email"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12 md:col-6">
+                      <input
+                        type="text"
+                        name="phone"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        placeholder="Phone"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12 md:col-6">
+                      <input
+                        type="text"
+                        name="subject"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        placeholder="Subject"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        name="message"
+                        rows="5"
+                        class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary"
+                        placeholder="Type your message"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="w-full text-center">
+                        <button
+                          type="submit"
+                          class="inline-block px-5 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10"
+                        >
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="item">
-              <div class="thumb">
-                <a href="pages/stage.html" target="_parent"><h4 style="color:#51392b; font-weight:700;">STAGE SETUP</h4>
-                  <img src="assets/images/service/6.png" alt="">
-                </a>  
+          </div>
+        </div>
+      </section>
+
+      <!-- Map section -->
+      <section id="map" class="w-full h-[500px] overflow-hidden -mt-[12rem]">
+        <object
+          data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.573691318805!2d104.8962608!3d11.5823885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951fab1d6ce37%3A0x53c55a9b20967607!2sWoodblock%20Printing%20and%20Advertising!5e0!3m2!1sen!2skh!4v1747033626888!5m2!1sen!2skh"
+          class="border-0 w-full h-full"
+        ></object>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark-2 text-white">
+      <div class="container py-20 lg:py-[100px]">
+        <div class="row">
+          <div class="col-12 order-first lg:col-4">
+            <div class="w-full">
+              <a href="." class="inline-block mb-5">
+                <img src="assets/woodblock logo.png" />
+              </a>
+
+              <p class="mb-8 text-body-dark-11">
+                We create digital experiences for brands and companies by using
+                technology.
+              </p>
+
+              <div class="-mx-3 flex items-center">
+                <a
+                  href="javascript:void(0)"
+                  class="px-3 text-body-dark-11 text-[22px] leading-none"
+                >
+                  <i class="lni lni-facebook-fill"></i>
+                </a>
+
+                <a
+                  href="javascript:void(0)"
+                  class="px-3 text-body-dark-11 text-[22px] leading-none"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+                  </svg>
+                </a>
+
+                <a
+                  href="javascript:void(0)"
+                  class="px-3 text-body-dark-11 text-[22px] leading-none"
+                >
+                  <i class="lni lni-instagram-original"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Service -->
-  <!-- Process -->
-  <div class="our-services section">
-    <div class="services-right-dec">
-      <img src="assets/images/services-right-dec.png" alt="">
-    </div>
-    <div class="container">
-      <div class="services-left-dec">
-        <img src="assets/images/services-left-dec.png" alt="">
-      </div>
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2 style="color:#51392b;">OUR <em style="color:#E55437;">PROCESS</em></h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-services">
-            <div class="item">
-              <h4 style="color:#51392b;">1. INQUIRE</h4>
-              <div class="icon"><img src="assets/images/service-icon-01.png" alt=""></div>
-              <p>Get in touch with us through our social media platform to inquire about your desired products.</p>
+          <div class="col-6 lg:col-2">
+            <div class="w-full">
+              <h4 class="mb-9 text-lg font-semibold text-inherit">OUR SERVICES</h4>
+              <ul>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Corporate Gift & Branding</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Packaging Designs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Printing Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Brand Activations</a
+                  >
+                </li>
+                 <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Stage Equipments</a
+                  >
+                </li>
+                 <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Stage Setups</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="item">
-              <h4 style="color:#51392b;">2. SEND YOUR DESIGN</h4>
-              <div class="icon"><img src="assets/images/service-icon-02.png" alt=""></div>
-              <p>Provide us with specifications, size, and quantity of your designs and/or artworks.</p>
-            </div>
-            <div class="item">
-              <h4 style="color:#51392b;">3. GET YOUR SAMPLE</h4>
-              <div class="icon"><img src="assets/images/service-icon-03.png" alt=""></div>
-              <p>Pay for sample fee and get your sample within a given period.</p>
-            </div>
-            <div class="item">
-              <h4 style="color:#51392b;">4. CONFIRM YOUR ORDER & PAYMENT DETAIL</h4>
-              <div class="icon"><img src="assets/images/service-icon-03.png" alt=""></div>
-              <p>Confirm your order and payment details so we could proceed to produce the products for you.</p>
-            </div>
-            <div class="item">
-              <h4 style="color:#51392b;">5. GET YOUR ORDER</h4>
-              <div class="icon"><img src="assets/images/service-icon-04.png" alt=""></div>
-              <p>Receive the products you ordered within a given period.</p>
+          </div>
+          <div class="col-6 lg:col-2">
+            <div class="w-full">
+              <h4 class="mb-9 text-lg font-semibold text-inherit">Quick Links</h4>
+              <ul>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="mb-3 inline-block text-body-dark-11"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Process -->
-
-  <div class="footer-dec">
-    <img src="assets/images/footer-dec.png" alt="">
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="about footer-item">
-            <div class="logo">
-              <a href="#"><img src="assets/images/logo.png" alt="Onix Digital TemplateMo"></a>
+          <div class="col-12 -order-3 lg:col-4 lg:order-1">
+            <div class="w-full">
+              <h4 class="mb-9 text-lg font-semibold text-inherit">Visit Us</h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.573691318805!2d104.8962608!3d11.5823885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951fab1d6ce37%3A0x53c55a9b20967607!2sWoodblock%20Printing%20and%20Advertising!5e0!3m2!1sen!2skh!4v1747033626888!5m2!1sen!2skh" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             
             </div>
-            <a href="#" style="color:#51392b; font-weight: 400;">info@woodblock.com</a>
-            <ul>
-              <li><a href="https://www.facebook.com/profile.php?id=100067079472030"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://t.me/WB_Printing_advertising"><i class="fa fa-comment"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="services footer-item">
-            <h4 style="color:#51392b;">Our Service</h4>
-            <ul>
-              <li><a href="pages/supply.html">Supplying</a></li>
-              <li><a href="pages/printing.html">Printing</a></li>
-              <li><a href="pages/brand.html">Brand Activation</a></li>
-              <li><a href="pages/art.html">Art & Design</a></li>
-              <li><a href="pages/equipment.html">Stage Equipments</a></li>
-              <li><a href="pages/stage.html">Stage Setup</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="community footer-item">
-            <h4 style="color:#51392b;">Quick Links</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#service">Services</a></li>
-              <li><a href="https://t.me/WB_Printing_advertising">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="subscribe-newsletters footer-item">
-            <h4 style="color:#51392b;">Visit Us</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.573618004108!2d104.89368587565983!3d11.582393743809531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951fab1d6ce37%3A0x53c55a9b20967607!2sWoodblock%20Printing%20and%20Advertising!5e0!3m2!1sen!2skh!4v1743409958701!5m2!1sen!2skh" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="copyright">
-            <p style="color:#51392b;">Copyright © 2025 WoodBlock Printing & Advertising. All Rights Reserved. 
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+      <div class="w-full border-t border-solid border-alpha-dark"></div>
+      <div class="container py-8">
+        <div class="flex flex-wrap">
+          <div class="w-full text-center">
+            <div class="my-1 flex justify-center md:justify-center">
+              <p class="text-body-dark-11 text-gray-200">
+                Copyright © 2025 WoodBlock Printing & Advertising. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <button
+      type="button"
+      class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided"
+      data-web-trigger="scroll-top"
+      aria-label="Scroll to top"
+    >
+      <i class="lni lni-chevron-up"></i>
+    </button>
 
-  <!-- Scripts -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-  <script>
-  // Acc
-    $(document).on("click", ".naccs .menu div", function() {
-      var numberIndex = $(this).index();
+    <script src="./assets/js/main.js"></script>
+    <script>
+      // Scroll Reveal
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "16px",
+        duration: 1000,
+        reset: false,
+      });
 
-      if (!$(this).is("active")) {
-          $(".naccs .menu div").removeClass("active");
-          $(".naccs ul li").removeClass("active");
+      sr.reveal(`.scroll-revealed`, {
+        cleanup: true,
+      });
 
-          $(this).addClass("active");
-          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+      // GLightBox
+      GLightbox({
+        selector: ".video-popup",
+        href: "https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM",
+        type: "video",
+        source: "youtube",
+        width: 900,
+        autoplayVideos: true,
+      });
 
-          var listItemHeight = $(".naccs ul")
-            .find("li:eq(" + numberIndex + ")")
-            .innerHeight();
-          $(".naccs ul").height(listItemHeight + "px");
-        }
-    });
-  </script>
-</body>
+      const myGallery3 = GLightbox({
+        selector: ".portfolio-box",
+        type: "image",
+        width: 900,
+      });
+
+      // Testimonial
+      const testimonialSwiper = new Swiper(".testimonial-carousel", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
