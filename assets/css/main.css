@@ -1926,7 +1926,7 @@ p + p{
 }
 
 .pt-\[120px\]{
-  padding-top: 120px;
+  padding-top: 90px;
 }
 
 .text-left{
@@ -2430,7 +2430,7 @@ p + p{
   }
 
   .md\:pt-\[130px\]{
-    padding-top: 130px;
+    padding-top: 90px;
   }
 
   .md\:col-4{
@@ -2521,7 +2521,7 @@ p + p{
   }
 
   .lg\:pt-\[160px\]{
-    padding-top: 160px;
+    padding-top: 90px;
   }
 
   .lg\:text-5xl{

@@ -60,9 +60,10 @@
 
     <!-- Navbar -->
     <header
-      class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent"
+      class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center"
       role="banner"
       aria-label="Navigation bar"
+      style="background-color: #935116;"
     >
       <div class="container">
         <div
@@ -103,6 +104,7 @@
                       href="#home"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-[#fff] dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
                       role="menuitem"
+                      style="color:#fff;"
                       >Home</a
                     >
                   </li>
@@ -111,6 +113,7 @@
                       href="#about"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                       role="menuitem"
+                      style="color:#fff;"
                       >About Us</a
                     >
                   </li>
@@ -119,6 +122,7 @@
                       href="#services"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                       role="menuitem"
+                      style="color:#fff;"
                       >Services</a
                     >
                   </li>
@@ -128,6 +132,7 @@
                       href="#intro"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                       role="menuitem"
+                      style="color:#fff;"
                       >Mockup & Design</a
                     >
                   </li>
@@ -137,6 +142,7 @@
                       href="#content"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                       role="menuitem"
+                      style="color:#fff;"
                       >Content</a
                     >
                   </li>
@@ -146,6 +152,7 @@
                       href="#team"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                       role="menuitem"
+                      style="color:#fff;"
                       >Team</a
                     >
                   </li>
@@ -155,6 +162,7 @@
                       href="#contact"
                       class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
                       role="menuitem"
+                      style="color:#fff;"
                       >Contact</a
                     >
                   </li>
@@ -162,31 +170,32 @@
               </nav>
             </div>
             <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+              <!-- 
               <button
                 type="button"
                 class="inline-flex items-center text-primary-color text-[24px]/none"
                 aria-label="Switch theme"
                 data-web-trigger="web-theme"
-              ></button>
-              
+                style="color:#fff;"
+              ></button> -->
             </div>
           </div>
         </div>
       </div>
     </header>
-
     <main class="main relative">
       <!-- Hero section -->
       <section
         id="home"
-        class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        class="relative w-full mt-20 overflow-hidden bg-cover bg-center text-primary-color"
+        style="background-image: url('assets/img/banner/banner-1.png');
+        background-position: center 40%;
+        height: 650px; margin-top:80px;"
       >
-      <img scr="img/hero.png" />
         <div class="container">
-          
-          <div class="-mx-5 flex flex-wrap items-center">
+          <div class="-mx-5 flex flex-wrap items-center" style="margin-top: 220px;">
             <div class="w-full px-5">
-              <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+              <div class="scroll-revealed mx-auto max-w-[780px] text-center mb-24">
                 <h1
                   class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-4xl lg:leading-tight"
                 >
@@ -1230,7 +1239,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-primary-dark-2 text-white">
+    <footer class="text-white" style="background-color: #935116;">
       <div class="container py-20 lg:py-[100px]">
         <div class="row">
           <div class="col-12 order-first lg:col-4">
@@ -1239,7 +1248,7 @@
                 <img src="assets/woodblock logo.png" />
               </a>
 
-              <p class="mb-8 text-body-dark-11">
+              <p class="mb-8">
                 We create digital experiences for brands and companies by using
                 technology.
               </p>
@@ -1247,14 +1256,16 @@
               <div class="-mx-3 flex items-center">
                 <a
                   href="javascript:void(0)"
-                  class="px-3 text-body-dark-11 text-[22px] leading-none"
+                  class="px-3 text-[22px] leading-none"
+                  style="color:#fff;"
                 >
                   <i class="lni lni-facebook-fill"></i>
                 </a>
 
                 <a
                   href="javascript:void(0)"
-                  class="px-3 text-body-dark-11 text-[22px] leading-none"
+                  class="px-3 text-[22px] leading-none"
+                  style="color:#fff;"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
@@ -1263,7 +1274,8 @@
 
                 <a
                   href="javascript:void(0)"
-                  class="px-3 text-body-dark-11 text-[22px] leading-none"
+                  class="px-3 text-[22px] leading-none"
+                  style="color:#fff;"
                 >
                   <i class="lni lni-instagram-original"></i>
                 </a>
@@ -1277,42 +1289,48 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Corporate Gift & Branding</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Packaging Designs</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Printing Services</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Brand Activations</a
                   >
                 </li>
                  <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Stage Equipments</a
                   >
                 </li>
                  <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Stage Setups</a
                   >
                 </li>
@@ -1326,35 +1344,40 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >About Us</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Service</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Team</a
                   >
                 </li>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-body-dark-11"
+                    class="mb-3 inline-block"
+                    style="color:#fff;"
                     >Contact</a
                   >
                 </li>
@@ -1375,7 +1398,8 @@
         <div class="flex flex-wrap">
           <div class="w-full text-center">
             <div class="my-1 flex justify-center md:justify-center">
-              <p class="text-body-dark-11 text-gray-200">
+              <p class="text-gray-200"
+              style="color:#fff;">
                 Copyright © 2025 WoodBlock Printing & Advertising. All Rights Reserved.
               </p>
             </div>
